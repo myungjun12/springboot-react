@@ -106,9 +106,32 @@ const TodoList = () => {
         .catch(e => console.log(e));
 
      }
-
-     const 할일삭제버튼 = () => {
-
+     /* 삭제하고 싶은 번호를 가지고 삭제 */
+     const 할일삭제버튼 = (todoNo, index) => {
+        fetch("/todo", {
+            method: "delete",
+            headers: {'Content-Type' : 'application/json'},
+            body:todoNo
+        })
+        .then(response => response.text()) // 응답 결과를 글자형식으로 가져오겠다.
+        .then(result => {
+            if(result === 0){
+                alert("삭제에 실패하였습니다.");
+                return;
+            }
+            const newTodoList = [...todoList]; //배열 복사
+            
+            //배열.splice(인덱스, 몇칸)
+            // -> 배열의 인덱스 몇 번째 태그 부터 몇 칸을 잘라내서 봔환할지 지정
+            // 배열에서 잘라진 부분이 사라짐
+            newTodoList.splice(index,1); //내가 선택한 번호, 하나만 삭제
+            /*  newTodoList.              splice                     (index         ,1);
+            새로운목록리스트.괄호 안에 작성한 부분 제외하고 목록 새로작성(내가선택한번호,하나만삭제);
+            */
+           setTodoList(newTodoList); //새로 작성한 목록으로 기존목록에 대체하기
+        })
+        // 삭제 안될 때 문제 보여주기 왜 문제가 생겼는지 개발자용 콘솔창에서만 보여주는 것
+        .catch( e => console.log(e)); 
      }
 
     return (

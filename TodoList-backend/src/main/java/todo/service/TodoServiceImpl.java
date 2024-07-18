@@ -34,11 +34,11 @@ public class TodoServiceImpl implements TodoService {
 		map.put("loginMember", loginMember);
 		
 		// 만약에 로그인한 멤버 정보가 조회되면 그 멤버가 작성한 투두리스트를 보여주겠다.
-//		if(loginMember != null ) {
-//			List<Todo> todoList = mapper.selectTodoList(loginMember.getTodoMemberNo());
-//			// map 형태로 프론트엔드 전달 todoList 라는 이름(key)으로 todoList 내용(value) 전달
-//			map.put("todoList", todoList);
-//		}
+		if(loginMember != null ) {
+			List<Todo> todoList = mapper.selectTodoList(loginMember.getTodoMemberNo());
+			// map 형태로 프론트엔드 전달 todoList 라는 이름(key)으로 todoList 내용(value) 전달
+			map.put("todoList", todoList);
+		}
 		return map;
 	}
 	
