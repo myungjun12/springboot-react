@@ -1,8 +1,6 @@
 package todo.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 // VO = dataBase까지는 가지 않고 읽기 전용 email 인증번호
 // DTO = dataBase에 값을 연동해서 사용
