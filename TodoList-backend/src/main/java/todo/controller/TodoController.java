@@ -26,7 +26,7 @@ public class TodoController {
 	 *  select Count 했을 때 만약에 사용하고자 하는 아이디가 존재하면 count값이 1로 넘어어고
 	 *  사용하고자 하는 아이디가 DB에 존재하지 않으면 0
 	 */
-	@GetMapping("/idCheck")
+	@GetMapping("/idCheck") // React에서 전달해준 값의 id 가 DB/service.idCheck(id); 있다면 1 없다면 0 을 반환하겠다.
 	public int idCheck(@RequestParam("id") String id) { 
 		return service.idCheck(id);
 	}

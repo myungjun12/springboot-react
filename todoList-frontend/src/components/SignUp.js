@@ -28,7 +28,7 @@ const SignupContainer = () => {
     }
 
     // 비동기로 아이디 중복 검사 수행
-    fetch("/idCheck?id=" + inputId)
+    fetch("/idCheck?id=" + inputId) // url 주소로 이동할 때 inputId 값을 들고 가서 비교하겠다.
     .then(resp => resp.text())
     .then(result => {
 
@@ -86,8 +86,6 @@ const SignupContainer = () => {
 
 
   }
-
-
 
   return (
     <div className="signup-container">
