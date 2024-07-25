@@ -9,7 +9,7 @@ const SignupContainer = () => {
   const [name, setName] = useState('');
   const [result, setResult] = useState('');
 
-  // 아이디 중복 검사
+  // 아이디 중복 검사 초기값 false
   const [idValidation, setIdValidation] = useState(false);
   // false -> 사용 불가
   // true -> 사용 가능

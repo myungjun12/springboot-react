@@ -2,17 +2,17 @@ import React, {useState, useContext} from "react";
 import TodoListContext from "./TodoListContext";
 
 const TodoList = () => {
+    // createContext 를 통해 만든 객체를 useContext() 안에 넣어 사용하겠다.
+    const {todoList, setTodoList, loginMember} = useContext(TodoListContext); 
 
-    const {todoList, setTodoList, loginMember} = useContext(TodoListContext);
-
-    const [inputTodo, setInputTodo] = useState('');
+    const [inputTodo, setInputTodo] = useState(''); //inputTodo 초기값 공백
 
     let keyIndex = 0;
 
     // 할 일 추가버튼 기능 설정
      const 할일추가버튼 = () => {
 
-        //만약에 할 일이 입력되지 않았다면 입력해달라는 알람창 띄워주기
+        //만약에 공백을 제거하고 입력한 길이가 0 이라면 alert 출력하고 리턴
         if (inputTodo.trim().length === 0) { //trim() = 앞 뒤 공백 제거 스페이스바 거부
             alert('할 일을 입력해주세요.');
             return;
