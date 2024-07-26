@@ -16,4 +16,16 @@
 		Insert into user(name,email)
 		Values(#{name}, #{email})
 	</insert>
+	
+	<delete id="deleteUser" parameterType="int">
+		delete FROM user WHERE ID = #{id}
+	</delete>
+	
+	<!-- 수정하기 -->
+	<update id="updateUser" parameterType="User">
+		UPDATE user 
+		SET name = #{name},
+		    email = #{email}
+		WHERE id = #{id}
+	</update>
 </mapper>

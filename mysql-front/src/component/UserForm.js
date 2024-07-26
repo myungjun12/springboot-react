@@ -5,8 +5,12 @@ const UserForm = ({addUser}) => {
     const [email, setEmail] = useState("");
 
     const handleSubmit = (e) => {
-        e.preventDefault(); //잠시 제출 방지
+        e.preventDefault(); // 새로고침하기 전에 제출값을 대기한다
         addUser({name, email});
+        
+        setName("");
+        setEmail(""); 
+        // input에 작성한 내용을 제출하고 작성한 값 비워두기
     }
 
     return (
