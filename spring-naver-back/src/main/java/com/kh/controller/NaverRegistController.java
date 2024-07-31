@@ -36,7 +36,6 @@ public class NaverRegistController {
 	private String state;
 	
 	
-	
 	@GetMapping("/naverLogin") //localhost:9010/api/naverLogin
 	public String naverlogin() {
 		String api_url = "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=" + clientId + "&redirect_uri=" + redirectUri + "&state=" + state;
