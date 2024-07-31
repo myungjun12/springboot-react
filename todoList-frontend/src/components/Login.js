@@ -7,7 +7,7 @@ const Login = () => {
   const { loginMember, setLoginMember, setTodoList } = useContext(TodoListContext);
 
   /* 아이디, 비밀번호 상태 변수 */
-  const [id, setId] = useState('');
+  const [id, setId] = useState(''); 
   const [pw, setPw] = useState('');
 
   /* 로그인 이벤트 핸들러 */
@@ -57,7 +57,7 @@ const Login = () => {
           </tr>
 
           <tr>
-            <th>PW</th>
+            <th>PW</th> 
             <td>
               <input type="password" onChange={e => setPw(e.target.value)} value={pw} />
             </td>

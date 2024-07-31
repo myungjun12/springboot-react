@@ -54,6 +54,7 @@ public class DBConfig {
 		sfb.setDataSource(dataSource); //HikariConfig에서 받은 정보로 연결한 DataBase 연결 경로를 가져와서 사용
 		sfb.setMapperLocations(applicationContext.getResources("classpath:/mappers/**.xml"));
 		sfb.setTypeAliasesPackage("com.kh.dto"); 
+		
 		// 나중에 본인의 dto 패키지명 변경 dataBase 작성한 컬럼값과 dto에 작성한 변수명 대조
 		
 		//우리가 나중에 컬럼명을 dto에서 카멜케이스나 dto용법으로 작성했을 때 작성값 설정
