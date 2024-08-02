@@ -14,6 +14,8 @@ public interface UserMapper {
 	
 	void insertUser(User user);
 	
+	void insertNaverUser(User user);
+	
 	void deleteUser(int id);
 	
 	void updateUser(User user);

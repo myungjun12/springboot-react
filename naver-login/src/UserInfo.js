@@ -10,6 +10,10 @@ function UserInfo() {
     const [userInfo, setUserInfo] = useState(null);
     const location = useLocation();
     const [loading, setLoading] = useState(true);
+
+    const [userId, setUserId] = useState("");
+    const [userPw, setUserPw] = useState(""); 
+
     //어떤 클릭이 없어도 UserInfo 페이지 들어오면 자동으로 실행 
     useEffect(() => {
         // URLSearchParams : URL ? 뒤에 붙은 키-벨류 값을 가져옴
@@ -44,6 +48,23 @@ function UserInfo() {
     
     //만약에 accessToken 값이 존재하면 axios 발동
    
+    const NaverLoginInfo = () => {
+        const NaverLoginInfo = {
+           id : userId,
+           name : userInfo.response.name,
+           email : userInfo.response.email,
+           pw : userPw,
+           img : userInfo.response.profile_image,
+           nickname : userInfo.response.nickname,
+           gender : userInfo.response.gender
+        }
+    axios.post("/NaverLoginUserInfo", NaverLoginInfo)
+    .catch( err => {
+        alert("중복된 회원!");
+    })
+    setUserId("");
+    setUserPw("");
+    }
 
     
     if(loading){
@@ -72,7 +93,19 @@ function UserInfo() {
 
             <div>
                 <h2>회원가입에 필요한 아이디 및 비밀번호 작성하기</h2>
-                <input type="text" />
+                
+                <form>
+                <div>
+                <label>아이디 : </label>
+                <input type="text" value={userId} onChange={(e) => setUserId(e.target.value)}/>
+                </div>
+                <div>
+                <label>비밀번호 : </label>
+                <input type="password" value={userPw} onChange={(e) => setUserPw(e.target.value)} />
+                </div>
+                <button onClick={NaverLoginInfo}>가입하기</button>
+                </form>
+
             </div>
         </>
     );

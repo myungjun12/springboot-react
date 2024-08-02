@@ -11,6 +11,8 @@ public interface UserService { // 인터페이스에 있는 메서드는 재정�
 	
 	void insertUser(User user);
 	
+	void insertNaverUser(User user);
+	
 	void deleteUser(int id);
 	
 	void updateUser(User user);

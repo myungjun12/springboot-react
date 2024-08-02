@@ -7,7 +7,7 @@ const Login = () => {
     // get 이용해서 특정 유저 정보를 가져오는 주소 설정
     useEffect(() => {
         const 유저정보 = () => {
-            fetch("http://localhost:9010/userInfo") //HTTP METHOD (Get Post Put Delete)
+            fetch("http://localhost:9000/userInfo") //HTTP METHOD (Get Post Put Delete)
             .then(가져온응답결과 => { // then fetch가 java controller에서 값을 가져왔을 때 실행할 구문
                 return 가져온응답결과.json();
             })
@@ -35,7 +35,7 @@ const Login = () => {
              <div>{JSON.stringify(userInfo, null, 2)}</div>
          </div> 
         ) : (
-        <a href="http://localhost:9010/naverLogin">
+        <a href="http://localhost:9000/naverLogin">
            네이버로 로그인하기 
         </a>
         )}
