@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="afbfdd33-ee3e-4940-ba20-0838ada6a260" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList-backend/src/main/resources/mappers/todo-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList-backend/src/main/resources/mappers/todo-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naver-login/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/naver-login/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naver-login/src/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-front/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-front/src/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-front/src/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-front/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-front/src/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-naver-back/src/main/java/com/kh/common/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-naver-back/src/main/java/com/kh/common/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-naver-back/src/main/java/com/kh/controller/NaverLoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-naver-back/src/main/java/com/kh/controller/NaverRegistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-naver-back/src/main/java/com/kh/controller/NaverRegistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-naver-back/src/main/java/com/kh/controller/OAuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-naver-back/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-naver-back/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoList-frontend/src/components/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/todoList-frontend/src/components/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/user-app/src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2kJ5EqfyIq5WmLPajIT0J7uFLql" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user1/spring_react_workspace/spring-image-back",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.이름이 지정되지 않았습니다">
+    <configuration name="이름이 지정되지 않았습니다" type="Application" factoryName="Application" nameIsGenerated="true">
+      <module name="spring_react_workspace" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="이름이 지정되지 않았습니다" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring_react_workspace" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.이름이 지정되지 않았습니다" />
+      <item itemvalue="애플리케이션.이름이 지정되지 않았습니다" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18968.26" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18968.26" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="afbfdd33-ee3e-4940-ba20-0838ada6a260" name="변경" comment="" />
+      <created>1722988729919</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722988729919</updated>
+      <workItem from="1722988730918" duration="106000" />
+      <workItem from="1722988841637" duration="57000" />
+      <workItem from="1722988902090" duration="3131000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
