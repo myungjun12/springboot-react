@@ -1,5 +1,6 @@
-import React, {createContext} from "react";
+import React, { createContext } from 'react';
 
-const TodoListContext = createContext(); // use로 사용할 컨텍스트 객체생성
+/* 전역 변수 역할의 객체 생성 */
+const TodoListContext = createContext();
 
-export default TodoListContext; 
+export default TodoListContext;

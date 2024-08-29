@@ -1,25 +1,31 @@
 import React, {useState, useEffect} from "react";
 
 const EditUserForm = ({userToEdit, updateUser, cancelEdit}) => {
-    // 기존 이름,이메일과 변경할 이름,이메일을 담을 변수명 설정
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
+    // 기존이름과 변경할 이름 이메일 변경할이메일을 담을 변수명 설정
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
 
     useEffect(() => {
-        if(userToEdit){
+        if(userToEdit) {
             setName(userToEdit.name);
             setEmail(userToEdit.email);
         }
     }, [userToEdit]);
-    
+
     return (
         <div>
-            {/*
-            만약에 userToEdit 유저 수정을 진행한다면 수정하기 위한 form을 보여주고 
+            {/* 
+            
+            만약에 userToEdit 유저 수정을 진행한다면 수정하기 위한 form을 보여주고
             수정하지 않는다면 form을 보여주지 않음
+            
             */}
-            {userToEdit ? (
-
+            {userToEdit 
+            
+            
+            
+            
+            ? (
                 <form>
                     <h2>유저 정보 수정하기</h2>
                     <label>
@@ -32,8 +38,13 @@ const EditUserForm = ({userToEdit, updateUser, cancelEdit}) => {
                     <button>취소하기</button>
                 </form>
 
-            ) : null}
+
+            )
+            
+            
+            : null}
         </div>
-    );
+    )
 }
+
 export default EditUserForm;

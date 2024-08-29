@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import TodoListContext from './components/TodoListContext';
-import Signup from "./components/SignUp";
+import Signup from './components/Signup'
 import Login from './components/Login';
 import TodoList from './components/TodoList';
 

@@ -1,5 +1,5 @@
 {
-  "name": "npx",
+  "name": "todolist-frontend",
   "version": "0.1.0",
   "private": true,
   "proxy" : "http://localhost:9007",

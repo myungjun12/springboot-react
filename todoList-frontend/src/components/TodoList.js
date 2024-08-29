@@ -2,17 +2,17 @@ import React, {useState, useContext} from "react";
 import TodoListContext from "./TodoListContext";
 
 const TodoList = () => {
-    // createContext 를 통해 만든 객체를 useContext() 안에 넣어 사용하겠다.
-    const {todoList, setTodoList, loginMember} = useContext(TodoListContext); 
 
-    const [inputTodo, setInputTodo] = useState(''); //inputTodo 초기값 공백
+    const {todoList, setTodoList, loginMember} = useContext(TodoListContext);
+
+    const [inputTodo, setInputTodo] = useState('');
 
     let keyIndex = 0;
 
     // 할 일 추가버튼 기능 설정
      const 할일추가버튼 = () => {
 
-        //만약에 공백을 제거하고 입력한 길이가 0 이라면 alert 출력하고 리턴
+        //만약에 할 일이 입력되지 않았다면 입력해달라는 알람창 띄워주기
         if (inputTodo.trim().length === 0) { //trim() = 앞 뒤 공백 제거 스페이스바 거부
             alert('할 일을 입력해주세요.');
             return;
@@ -109,29 +109,29 @@ const TodoList = () => {
      /* 삭제하고 싶은 번호를 가지고 삭제 */
      const 할일삭제버튼 = (todoNo, index) => {
         fetch("/todo", {
-            method: "delete",
+            method:'delete',
             headers: {'Content-Type' : 'application/json'},
             body:todoNo
         })
-        .then(response => response.text()) // 응답 결과를 글자형식으로 가져오겠다.
+        .then(response => response.text())// 응답결과를 글자형식으로 가져오겠다.
         .then(result => {
-            if(result === 0){
-                alert("삭제에 실패하였습니다.");
-                return;
-            }
+            //만약에 결과가 0이라면 alert창으로 삭제에 실패하였습니다. 띄워주고 되돌아가기
+
             const newTodoList = [...todoList]; //배열 복사
-            
+
             //배열.splice(인덱스, 몇칸)
-            // -> 배열의 인덱스 몇 번째 태그 부터 몇 칸을 잘라내서 봔환할지 지정
+            // -> 배열의 인덱스 몇 번째 태그 부터 몇 칸을 잘라내서 반환할지 지정
             // 배열에서 잘라진 부분이 사라짐
             newTodoList.splice(index,1); //내가 선택한 번호, 하나만 삭제
-            /*  newTodoList.              splice                     (index         ,1);
-            새로운목록리스트.괄호 안에 작성한 부분 제외하고 목록 새로작성(내가선택한번호,하나만삭제);
+            /*
+                newTodoList.             splice                     (index         ,1         );
+            새로운목록리스트.괄호 안에 작성한 부분 제외하고 목록 새로작성(내가 선택한 번호,하나만삭제);
             */
-           setTodoList(newTodoList); //새로 작성한 목록으로 기존목록에 대체하기
+           setTodoList(newTodoList);//새로 작성한 목록으로 기존목록에 대체하기
         })
-        // 삭제 안될 때 문제 보여주기 왜 문제가 생겼는지 개발자용 콘솔창에서만 보여주는 것
-        .catch( e => console.log(e)); 
+        //삭제 안될 때 문제 보여주기 왜 문제가 생겼는지 개발자용 콘솔창에서만 보여주는 것
+        .catch(e => console.log(e));
+
      }
 
     return (

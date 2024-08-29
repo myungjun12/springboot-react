@@ -1,6 +1,8 @@
 package todo.dto;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 // VO = dataBase까지는 가지 않고 읽기 전용 email 인증번호
 // DTO = dataBase에 값을 연동해서 사용
@@ -16,3 +18,14 @@ public class Todo {
 	private String isDone; // 할 일을 완료했는지 완료 여부
 	private int todoMemberNo; // 어떤고객의 할 일인지 고객 번호 연동
 }
+
+
+
+
+
+
+
+
+
+
+

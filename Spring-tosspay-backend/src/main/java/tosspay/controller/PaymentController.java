@@ -77,14 +77,17 @@ public class PaymentController {
 		HttpEntity<Map<String, String>> entity = new HttpEntity<>(requestBody, headers);
 		
 		
+		//성공했을 때 실패했을 때
+
 		
 		try {
 			ResponseEntity<Map> response = restTemplate.exchange(url, HttpMethod.POST, entity, Map.class);
-			return new ResponseEntity<>(response.getBody(),response.getStatusCode());
-		}catch(Exception e) {
-			//        사용자한테 보내는 응답 실패메세지 잘못된 요청으로 안됐어. 상태코드 보낸것
+			return new ResponseEntity<>(response.getBody(), response.getStatusCode());
+		}catch (Exception e) {
+			//			사용자한테 보내는 응답  실패메세지       잘못된 요청으로 안됐어. 상태코드 보낸것
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
 		}
+		
 		
 	}
 }
@@ -133,3 +136,12 @@ URL = URI 한 종류로 주소이름
 URN = 고유한 이름
 
  */
+
+
+
+
+
+
+
+
+

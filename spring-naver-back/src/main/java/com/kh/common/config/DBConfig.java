@@ -1,5 +1,7 @@
 package com.kh.common.config;
 
+import java.io.IOException;
+
 import javax.sql.DataSource;
 
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -31,12 +33,6 @@ public class DBConfig {
 	@ConfigurationProperties(prefix = "spring.datasource.hikari")
 	public HikariConfig hikariConfig() {
 		HikariConfig config = new HikariConfig();
-		/*
-		config.setJdbcUrl("jdbc:mysql://localhost:3306/KH_WORKBOOK");
-		config.setUsername("root");
-		config.setPassword("kh1234");
-		config.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		*/
 		return new HikariConfig(); // hikari DataBase 연결을 도와주는 라이브러리 
 	}
 	
@@ -54,7 +50,6 @@ public class DBConfig {
 		sfb.setDataSource(dataSource); //HikariConfig에서 받은 정보로 연결한 DataBase 연결 경로를 가져와서 사용
 		sfb.setMapperLocations(applicationContext.getResources("classpath:/mappers/**.xml"));
 		sfb.setTypeAliasesPackage("com.kh.dto"); 
-		
 		// 나중에 본인의 dto 패키지명 변경 dataBase 작성한 컬럼값과 dto에 작성한 변수명 대조
 		
 		//우리가 나중에 컬럼명을 dto에서 카멜케이스나 dto용법으로 작성했을 때 작성값 설정
@@ -75,3 +70,15 @@ public class DBConfig {
 		// 저장을 안해서 안보이는 상황이라 여기지 않고, 코드 상이나 흐름에 문제가 있다고 생각할 수 있기 때문에 commit 진행 매니저 생성
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+

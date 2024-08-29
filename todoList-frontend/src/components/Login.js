@@ -1,13 +1,13 @@
 import React, { useContext, useState } from 'react';
 import TodoListContext from './TodoListContext';
 
-const Login = () => {
+const LoginComponent = () => {
 
   /* 전역 변수 Context에서 (좌변)변수명과 (우변)키가 일치하는 값을 얻어와 대입 */
   const { loginMember, setLoginMember, setTodoList } = useContext(TodoListContext);
 
   /* 아이디, 비밀번호 상태 변수 */
-  const [id, setId] = useState(''); 
+  const [id, setId] = useState('');
   const [pw, setPw] = useState('');
 
   /* 로그인 이벤트 핸들러 */
@@ -57,7 +57,7 @@ const Login = () => {
           </tr>
 
           <tr>
-            <th>PW</th> 
+            <th>PW</th>
             <td>
               <input type="password" onChange={e => setPw(e.target.value)} value={pw} />
             </td>
@@ -77,4 +77,4 @@ const Login = () => {
 
 }
 
-export default Login;
+export default LoginComponent;
